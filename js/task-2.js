@@ -28,3 +28,5 @@ class Storage {
   
   storage.removeItem('Scaner');
   console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+  

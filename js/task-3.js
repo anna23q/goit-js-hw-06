@@ -17,12 +17,15 @@ class StringBuilder {
       this.#value = str + this.#value;
     }
   
+
+    
     padBoth(str) {
       this.padEnd(str);
       this.padStart(str);
     }
   }
   
+
   const builder = new StringBuilder('.');
   console.log(builder.getValue()); // "."
   builder.padStart('^');
@@ -31,3 +34,4 @@ class StringBuilder {
   console.log(builder.getValue()); // "^.^"
   builder.padBoth('=');
   console.log(builder.getValue()); // "=^.^="
+
